@@ -24,4 +24,5 @@ Thumbs.db
 *.tlb
 *.tlh
 *.lib
+*.dll
 [Tt]est[Rr]esult*
