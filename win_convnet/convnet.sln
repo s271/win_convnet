@@ -17,6 +17,7 @@ Global
 		{F7F5A9C0-708A-403E-B932-D25E49920202}.Release|Win32.ActiveCfg = Release|Win32
 		{F7F5A9C0-708A-403E-B932-D25E49920202}.Release|Win32.Build.0 = Release|Win32
 		{F7F5A9C0-708A-403E-B932-D25E49920202}.Release|x64.ActiveCfg = Release|x64
+		{F7F5A9C0-708A-403E-B932-D25E49920202}.Release|x64.Deploy.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
