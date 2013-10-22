@@ -34,7 +34,7 @@
 			/>
 			<Tool
 				Name="Cudart Build Rule"
-				Include="include;include\nvmatrix;include\cudaconv2;"
+				Include="include;include/common;include\nvmatrix;include\cudaconv2;./;../../../common/inc;../../../../shared/inc"
 				Arch1="21"
 				Arch2="0"
 				Arch3="0"
