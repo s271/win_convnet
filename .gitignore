@@ -1,4 +1,12 @@
+
+#ignore thumbnails created by windows
+Thumbs.db
 #Ignore files build by Visual Studio
+*.obj
+*.exe
+*.pdb
+*.dll
+*.lib
 *.user
 *.aps
 *.pch
@@ -7,22 +15,18 @@
 *_p.c
 *.ncb
 *.suo
+*.tlb
+*.tlh
 *.bak
 *.cache
 *.ilk
 *.log
+*.a
 [Bb]in
 [Dd]ebug*/
+*.lib
 *.sbr
 obj/
 [Rr]elease*/
 _ReSharper*/
-#ignore thumbnails created by windows
-Thumbs.db
-*.obj
-*.pdb
-*.tlb
-*.tlh
-*.lib
-*.dll
 [Tt]est[Rr]esult*
