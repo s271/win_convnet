@@ -39,6 +39,8 @@
 #include <cutil_inline.h>
 #include <time.h>
 #include <curand_kernel.h>
+#include <helper_image.h>
+#include <pthread.h>
 
 #include <matrix.h>
 #include "nvmatrix_kernels.cuh"

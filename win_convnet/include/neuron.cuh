@@ -31,6 +31,7 @@
 #include <string>
 #include <nvmatrix.cuh>
 #include <cutil_inline.h>
+#include <Python.h>
 
 template <class GradientOp>
 class AddGradientBinaryOperator {

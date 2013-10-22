@@ -27,6 +27,7 @@
 #ifndef CONV_UTIL_CUH
 #define	CONV_UTIL_CUH
 
+#include <helper_image.h>
 #include <nvmatrix.cuh>
 
 void convLocalMaxUndo(NVMatrix& images, NVMatrix& maxGrads, NVMatrix& maxActs, NVMatrix& target,

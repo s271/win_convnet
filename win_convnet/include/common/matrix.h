@@ -28,6 +28,7 @@
 #define MATRIX_H_
 
 #include <matrix_funcs.h>
+#define NUMPY_INTERFACE
 #ifdef NUMPY_INTERFACE
 #include <Python.h>
 #include <arrayobject.h>
