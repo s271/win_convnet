@@ -34,6 +34,10 @@
 			/>
 			<Tool
 				Name="Cudart Build Rule"
+				Include="include;include\nvmatrix;include\cudaconv2;"
+				Arch1="21"
+				Arch2="0"
+				Arch3="0"
 			/>
 			<Tool
 				Name="VCXMLDataGeneratorTool"
@@ -47,6 +51,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
+				AdditionalIncludeDirectories="include/common"
 				PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS;_USRDLL;CONVNET_EXPORTS"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
@@ -123,6 +128,7 @@
 				Name="VCCLCompilerTool"
 				Optimization="2"
 				EnableIntrinsicFunctions="true"
+				AdditionalIncludeDirectories="include/common"
 				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS;_USRDLL;CONVNET_EXPORTS"
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
@@ -179,9 +185,85 @@
 			Filter="cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx"
 			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
 			>
+			<File
+				RelativePath=".\src\convnet.cu"
+				>
+			</File>
+			<File
+				RelativePath=".\src\cost.cu"
+				>
+			</File>
+			<File
+				RelativePath=".\src\data.cu"
+				>
+			</File>
+			<File
+				RelativePath=".\src\layer.cu"
+				>
+			</File>
+			<File
+				RelativePath=".\src\layer_kernels.cu"
+				>
+			</File>
+			<File
+				RelativePath=".\src\neuron.cu"
+				>
+			</File>
+			<File
+				RelativePath=".\src\pyconvnet.cu"
+				>
+			</File>
+			<File
+				RelativePath=".\src\util.cu"
+				>
+			</File>
+			<File
+				RelativePath=".\src\weights.cu"
+				>
+			</File>
+			<File
+				RelativePath=".\src\worker.cu"
+				>
+			</File>
 			<Filter
 				Name="nvmatrix"
 				>
+				<File
+					RelativePath=".\src\nvmatrix\nvmatrix.cu"
+					>
+				</File>
+				<File
+					RelativePath=".\src\nvmatrix\nvmatrix_kernels.cu"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="cudaconv2"
+				>
+				<File
+					RelativePath=".\src\cudaconv2\conv_util.cu"
+					>
+				</File>
+				<File
+					RelativePath=".\src\cudaconv2\filter_acts.cu"
+					>
+				</File>
+				<File
+					RelativePath=".\src\cudaconv2\img_acts.cu"
+					>
+				</File>
+				<File
+					RelativePath=".\src\cudaconv2\weight_acts.cu"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="common"
+				>
+				<File
+					RelativePath=".\src\common\matrix.cpp"
+					>
+				</File>
 			</Filter>
 		</Filter>
 		<Filter
