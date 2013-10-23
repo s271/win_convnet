@@ -21,6 +21,7 @@ Thumbs.db
 *.ilk
 *.log
 *.a
+*.pyc
 [Bb]in
 [Dd]ebug*/
 *.lib
