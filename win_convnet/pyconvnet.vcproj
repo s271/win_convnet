@@ -269,7 +269,7 @@
 		</Configuration>
 		<Configuration
 			Name="Release|x64"
-			OutputDirectory="$(SolutionDir)$(PlatformName)\$(ConfigurationName)"
+			OutputDirectory="$(SolutionDir)"
 			IntermediateDirectory="$(PlatformName)\$(ConfigurationName)"
 			ConfigurationType="2"
 			CharacterSet="1"
@@ -283,7 +283,7 @@
 			/>
 			<Tool
 				Name="Cudart Build Rule"
-				Include="include;include/common;include\nvmatrix;include\cudaconv2;./;../../../common/inc;../../../../shared/inc;LIBS/include;LIBS\Pre-built.2\include;&quot;E:/WinPython-64bit-2.7.5.3/python-2.7.5.amd64/include&quot;;&quot;E:/WinPython-64bit-2.7.5.3/python-2.7.5.amd64/Lib/site-packages/numpy/core/include/numpy&quot;"
+				Include="include;include/common;include/nvmatrix;include/cudaconv2;./;../../../common/inc;../../../../shared/inc;LIBS/include;$(PYTHONPATH)/include;$(PYTHONPATH)/Lib/site-packages/numpy/core/include/numpy"
 				TargetMachinePlatform="1"
 			/>
 			<Tool
@@ -300,7 +300,7 @@
 				Name="VCCLCompilerTool"
 				Optimization="2"
 				EnableIntrinsicFunctions="true"
-				AdditionalIncludeDirectories="include/common;LIBS/include;&quot;E:/WinPython-64bit-2.7.5.3/python-2.7.5.amd64/include&quot;;&quot;E:/WinPython-64bit-2.7.5.3/python-2.7.5.amd64/Lib/site-packages/numpy/core/include/numpy&quot;"
+				AdditionalIncludeDirectories="include/common;LIBS/include;&quot;$(PYTHONPATH)/include&quot;;&quot;$(PYTHONPATH)/Lib/site-packages/numpy/core/include/numpy&quot;"
 				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS;_USRDLL;CONVNET_EXPORTS;MS_NO_COREDLL;Py_NO_ENABLE_SHARED;MS_NO_COREDLL;Py_NO_ENABLE_SHARED;"
 				RuntimeLibrary="0"
 				EnableFunctionLevelLinking="true"
@@ -320,6 +320,7 @@
 			<Tool
 				Name="VCLinkerTool"
 				AdditionalDependencies="python27.lib cublas.lib cudart.lib libopenblas.lib pthreadVC2_x64.lib"
+				OutputFile="$(OutDir)\$(ProjectName).pyd"
 				LinkIncremental="1"
 				AdditionalLibraryDirectories="&quot;$(CUDA_PATH)/lib/$(PlatformName)&quot;;&quot;$(PYTHONPATH)\libs&quot;;LIBS"
 				GenerateDebugInformation="true"
