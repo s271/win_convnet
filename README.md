@@ -30,7 +30,7 @@ Installation:
 -------------
 
 1. Make shure that you have PYTHONPATH enviromental variable set only to your 64 bit Python folder. If it set to other folder(s) you should replace $(PYTHONPATH) in the project settings in C/C++ and linker to absolute directory of 64bit  python.
-2. create folder in <NVIDIA SDK>\C\src folder and create repository there
+2. create folder in (NVIDIA SDK)\C\src folder and create repository there
 (for example E:\ProgramData\NVIDIA Corporation\NVIDIA GPU Computing SDK 4.2\C\src\convnet) and pull
 3.unpack win_convnet\dlls.zip into win_convnet folder
 4.buld project pyconvnet for x64 (preferably Release)
