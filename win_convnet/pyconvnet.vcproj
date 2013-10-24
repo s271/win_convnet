@@ -319,9 +319,9 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="E:\WinPython-64bit-2.7.5.3\python-2.7.5.amd64\libs\python27.lib cublas.lib cudart.lib LIBS/libopenblas.lib LIBS/pthreadVC2_x64.lib"
+				AdditionalDependencies="python27.lib cublas.lib cudart.lib libopenblas.lib pthreadVC2_x64.lib"
 				LinkIncremental="1"
-				AdditionalLibraryDirectories="$(CUDA_PATH)/lib/$(PlatformName);"
+				AdditionalLibraryDirectories="&quot;$(CUDA_PATH)/lib/$(PlatformName)&quot;;&quot;$(PYTHONPATH)\libs&quot;;LIBS"
 				GenerateDebugInformation="true"
 				SubSystem="2"
 				OptimizeReferences="2"

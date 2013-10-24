@@ -31,3 +31,6 @@ obj/
 _ReSharper*/
 [Tt]est[Rr]esult*
 *pyconvnet.pyd
+win_convnet/grad_test.bat
+win_convnet/100epoch_run.bat
+win_convnet/libs.zip
