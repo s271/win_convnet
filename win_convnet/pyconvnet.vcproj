@@ -136,7 +136,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="include/common;LIBS/include;&quot;E:/WinPython-64bit-2.7.5.3/python-2.7.5.amd64/include&quot;;&quot;E:/WinPython-64bit-2.7.5.3/python-2.7.5.amd64/Lib/site-packages/numpy/core/include/numpy&quot;"
+				AdditionalIncludeDirectories="include/common;LIBS/include;&quot;$(PYTHONPATH)/include&quot;;&quot;$(PYTHONPATH)/Lib/site-packages/numpy/core/include/numpy&quot;"
 				PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS;_USRDLL;CONVNET_EXPORTS;MS_NO_COREDLL;Py_NO_ENABLE_SHARED;MS_NO_COREDLL;Py_NO_ENABLE_SHARED;"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
@@ -156,9 +156,10 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="C:\Python27\libs\python27.lib cublas.lib cudart.lib LIBS\libopenblas.lib LIBS\Pre-built.2\lib\pthreadVSE2.lib"
+				AdditionalDependencies="python27.lib cublas.lib cudart.lib libopenblas.lib pthreadVC2_x64.lib"
+				OutputFile="$(OutDir)\win_convnet\$(ProjectName).pyd"
 				LinkIncremental="2"
-				AdditionalLibraryDirectories="$(CUDA_PATH)/lib/$(PlatformName);"
+				AdditionalLibraryDirectories="&quot;$(CUDA_PATH)/lib/$(PlatformName)&quot;;&quot;$(PYTHONPATH)\libs&quot;;LIBS"
 				GenerateDebugInformation="true"
 				SubSystem="2"
 				TargetMachine="17"
@@ -320,7 +321,7 @@
 			<Tool
 				Name="VCLinkerTool"
 				AdditionalDependencies="python27.lib cublas.lib cudart.lib libopenblas.lib pthreadVC2_x64.lib"
-				OutputFile="$(OutDir)\$(ProjectName).pyd"
+				OutputFile="$(OutDir)\win_convnet\$(ProjectName).pyd"
 				LinkIncremental="1"
 				AdditionalLibraryDirectories="&quot;$(CUDA_PATH)/lib/$(PlatformName)&quot;;&quot;$(PYTHONPATH)\libs&quot;;LIBS"
 				GenerateDebugInformation="true"

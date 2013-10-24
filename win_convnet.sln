@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pyconvnet", "pyconvnet.vcproj", "{F7F5A9C0-708A-403E-B932-D25E49920202}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pyconvnet", "win_convnet\pyconvnet.vcproj", "{F7F5A9C0-708A-403E-B932-D25E49920202}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
