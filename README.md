@@ -30,20 +30,21 @@ Installation:
 -------------
 
 1. Make shure that you have PYTHONPATH enviromental variable set only to your 64 bit Python folder. If it set to other folder(s) you should replace $(PYTHONPATH) in the project settings in C/C++ and linker to absolute directory of 64bit  python.
+
 2. create folder in (NVIDIA SDK)\C\src folder and create repository there
   (for example E:\ProgramData\NVIDIA Corporation\NVIDIA GPU Computing SDK 4.2\C\src\convnet) and pull
 
-4. unpack win_convnet\dlls.zip into win_convnet folder
+3. unpack win_convnet\dlls.zip into win_convnet folder
 
-5. buld project pyconvnet for x64 (preferably Release)
+4. build project pyconvnet for x64 (preferably Release), it should produce pyconvnet.pyd (dll for python) in pyconvnet folder
 
-6. run synthetic test from https://code.google.com/p/cuda-convnet/wiki/CheckingGradients :
+5. run synthetic test from https://code.google.com/p/cuda-convnet/wiki/CheckingGradients :
 
   python convnet.py --layer-def=./example-layers/layers.gc.cfg --layer-params=./example-layers/layer-params.gc.cfg --data-provider=dummy-cn-192 --check-grads=1
 
   Depending on your videocard some tests may fail, but majority should almoste always pass.
   
-7. Download real data from http://www.cs.toronto.edu/~kriz/cifar-10-py-colmajor.tar.gz and run training on them, as described at 
+6. Download real data from http://www.cs.toronto.edu/~kriz/cifar-10-py-colmajor.tar.gz and run training on them, as described at 
 https://code.google.com/p/cuda-convnet/wiki/Methodology
 
 
