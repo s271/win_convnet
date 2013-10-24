@@ -3,7 +3,7 @@ win_convnet
 
 Port to windows x64 of Alex Krizhevsky's cuda-convnet. Original project and documentation at http://code.google.com/p/cuda-convnet/
 
-Requirement:
+Requirements:
 --------------
 
 NVIDIA videocad with cuda compute capability 2.0 or better
@@ -23,12 +23,12 @@ NumPy package for 64bit Python
 NumPy for window and 64bit python included in Anaconda package and WinPython package. Pythonxy will not work - it's only 32 bit
 
 Recommended:
-==================================
+------------
 
 Install WinPython or Anaconda for both 64bit Python and NumPy
 
 Installation:
-==================================
+-------------
 
 1. Make shure that you have PYTHONPATH enviromental variable set only to your 64 bit Python folder. If it set to other folder(s) you should replace $(PYTHONPATH) in the project settings in C/C++ and linker to absolute directory of 64bit  python.
 2. create folder in <NVIDIA SDK>\C\src folder and create repository there
