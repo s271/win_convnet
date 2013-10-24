@@ -36,7 +36,9 @@ Installation:
 3.unpack win_convnet\dlls.zip into win_convnet folder
 4.buld project pyconvnet for x64 (preferably Release)
 5. run synthetic test from https://code.google.com/p/cuda-convnet/wiki/CheckingGradients :
+
 python convnet.py --layer-def=./example-layers/layers.gc.cfg --layer-params=./example-layers/layer-params.gc.cfg --data-provider=dummy-cn-192 --check-grads=1
+
 Depending on your videocard some tests may fail, but majority should almoste always pass.
 6. Download real data from http://www.cs.toronto.edu/~kriz/cifar-10-py-colmajor.tar.gz and run training on them, as described at 
 https://code.google.com/p/cuda-convnet/wiki/Methodology
