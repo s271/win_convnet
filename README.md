@@ -16,8 +16,7 @@ Cuda SDK 4.2 (will not work for 5.0, for 5.0 port look to original project comme
 
 Visual Studio 2008 or later with x64 support(x64 is not installed by defult in VS, may require installation update)
 
-Python 2.7 64bit
-  Neither Python 3.*, nor Python compiled for 32 bits will not work
+Python 2.7 64bit; Neither Python 3.*, nor Python compiled for 32 bits will not work
 
 NumPy package for 64bit Python
 NumPy for window and 64bit python included in Anaconda package and WinPython package. Pythonxy will not work - it's only 32 bit
