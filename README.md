@@ -36,7 +36,7 @@ Installation:
 
 3. unpack win_convnet\dlls.zip into win_convnet folder
 
-4. build project pyconvnet for x64 (preferably Release), it should produce pyconvnet.pyd (dll for python) in pyconvnet folder
+4. build project pyconvnet for x64 (preferably Release), it should produce pyconvnet.pyd (dll for python) in win_convnet folder
 
 5. run synthetic test from https://code.google.com/p/cuda-convnet/wiki/CheckingGradients :
 
