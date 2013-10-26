@@ -12,9 +12,9 @@ NVIDIA videocad with cuda compute capability 2.0 or better
 Windows x64
 
 
-Cuda SDK 4.2 (will not work for 5.0, for 5.0 port look to original project commentaries or Wyvernbai blog http://www.asiteof.me/archives/50, site down at the moment)
+Cuda SDK 4.2 (will not work for 5.0, for 5.0 port look to original project commentaries or Wyvernbai blog http://www.asiteof.me/archives/50)
 
-Visual Studio 2008 or later with x64 support(x64 is not installed by defult in VS, may require installation update)
+Visual Studio 2008 or later with x64 support(x64 is not installed by defult in VS, may require installation update).
 
 Python 2.7 64bit; Neither Python 3.*, nor Python compiled for 32 bits will not work
 
@@ -49,4 +49,4 @@ https://code.google.com/p/cuda-convnet/wiki/Methodology
 
 
 
-While building this project I've followed exellent instructions by Yalong Bai(Wyvernbai)from  http://www.asiteof.me/archives/50 (his site is down at the moment) and used his precompiled dlls, with some changes (cuda 4.2 instead of 5.2)
+While building this project I've followed exellent instructions by Yalong Bai(Wyvernbai)from  http://www.asiteof.me/archives/50 and used his precompiled dlls, with some changes (cuda 4.2 instead of 5.2)
