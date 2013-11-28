@@ -118,10 +118,11 @@
 			/>
 			<Tool
 				Name="Cudart Build Rule"
-				Include="include;include/common;include\nvmatrix;include\cudaconv2;./;../../../common/inc;../../../../shared/inc;LIBS/include;LIBS\Pre-built.2\include;C:\Python27\include;C:\Python27\Lib\site-packages\numpy\core\include\numpy;"
+				Include="include;include/common;include/nvmatrix;include/cudaconv2;./;../../../common/inc;../../../../shared/inc;LIBS/include;$(PYTHONPATH)/include;$(PYTHONPATH)/Lib/site-packages/numpy/core/include/numpy"
 				Arch1="21"
 				Arch2="0"
 				Arch3="0"
+				TargetMachinePlatform="1"
 			/>
 			<Tool
 				Name="VCXMLDataGeneratorTool"
@@ -140,7 +141,7 @@
 				PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS;_USRDLL;CONVNET_EXPORTS;MS_NO_COREDLL;Py_NO_ENABLE_SHARED;MS_NO_COREDLL;Py_NO_ENABLE_SHARED;"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
-				RuntimeLibrary="3"
+				RuntimeLibrary="0"
 				UsePrecompiledHeader="0"
 				WarningLevel="3"
 				DebugInformationFormat="3"
@@ -285,6 +286,8 @@
 			<Tool
 				Name="Cudart Build Rule"
 				Include="include;include/common;include/nvmatrix;include/cudaconv2;./;../../../common/inc;../../../../shared/inc;LIBS/include;$(PYTHONPATH)/include;$(PYTHONPATH)/Lib/site-packages/numpy/core/include/numpy"
+				Arch1="21"
+				Arch2="0"
 				TargetMachinePlatform="1"
 			/>
 			<Tool

@@ -423,6 +423,7 @@ void LocalLayer::copyToGPU() {
     for  (int i = 0; i < _prev.size(); i++) {
         if (_randSparse->at(i)) { // Copy to GPU vector that describes sparse random connectivity
             cudaMalloc(&_filterConns->at(i).dFilterConns, sizeof(int) * _groups->at(i) * _filterChannels->at(i));
+			cudaMemset(&_filterConns->at(i).dFilterConns, 0, sizeof(int) * _groups->at(i) * _filterChannels->at(i));//hack, trying to prevent nan
             cudaMemcpy(_filterConns->at(i).dFilterConns, _filterConns->at(i).hFilterConns,
                        sizeof(int) * _groups->at(i) * _filterChannels->at(i), cudaMemcpyHostToDevice);
             cutilCheckMsg("cudaMemcpy: failed");
