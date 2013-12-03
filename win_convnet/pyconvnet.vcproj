@@ -120,7 +120,7 @@
 				Name="Cudart Build Rule"
 				Include="include;include/common;include/nvmatrix;include/cudaconv2;./;../../../common/inc;../../../../shared/inc;LIBS/include;$(PYTHONPATH)/include;$(PYTHONPATH)/Lib/site-packages/numpy/core/include/numpy"
 				Arch1="21"
-				Arch2="20"
+				Arch2="0"
 				Arch3="0"
 				TargetMachinePlatform="1"
 			/>
@@ -287,7 +287,7 @@
 				Name="Cudart Build Rule"
 				Include="include;include/common;include/nvmatrix;include/cudaconv2;./;../../../common/inc;../../../../shared/inc;LIBS/include;$(PYTHONPATH)/include;$(PYTHONPATH)/Lib/site-packages/numpy/core/include/numpy"
 				Arch1="21"
-				Arch2="20"
+				Arch2="0"
 				TargetMachinePlatform="1"
 			/>
 			<Tool
