@@ -34,3 +34,5 @@ _ReSharper*/
 win_convnet/grad_test.bat
 win_convnet/100epoch_run.bat
 win_convnet/pyconvnet.pyd_0
+win_convnet/pyconvnet.vcproj.orig
+win_convnet/pyconvnet.exp
