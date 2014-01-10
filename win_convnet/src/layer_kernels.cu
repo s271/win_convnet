@@ -45,8 +45,7 @@ __global__ void kLogregCost(float* probs, float* labels, float* maxProbs, float*
     if (tx < numCases) {
         const int label = int(labels[tx]);
         const float maxp = maxProbs[tx];
-        const float labelp = max(probs[label * numCases + tx], 1e-24);
-        
+        const float labelp = probs[label * numCases + tx];       
         labelLogProbs[tx] = __logf(labelp);
         
         /*
