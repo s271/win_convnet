@@ -1,5 +1,5 @@
-win_convnet
-===========
+ win_convnet
+=============
 
 Port to windows x64 of Alex Krizhevsky's cuda-convnet. Original project and documentation at http://code.google.com/p/cuda-convnet/
 
