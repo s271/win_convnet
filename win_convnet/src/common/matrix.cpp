@@ -889,7 +889,7 @@ void Matrix::_applyLoopScalar(const MTYPE scalar, MTYPE(*func)(MTYPE, MTYPE), Ma
 bool Matrix::hasNan() const {
     for (long int r = 0; r < _numRows; r++) {
         for (long int c = 0; c < _numCols; c++) {
-            if (isnan((*this)(r,c))) {
+            if (isnan_host((*this)(r,c))) {
                 return true;
             }
         }
@@ -900,7 +900,7 @@ bool Matrix::hasNan() const {
 bool Matrix::hasInf() const {
     for (long int r = 0; r < _numRows; r++) {
         for (long int c = 0; c < _numCols; c++) {
-            if (isinf((*this)(r,c))) {
+            if (isinf_host((*this)(r,c))) {
                 return true;
             }
         }

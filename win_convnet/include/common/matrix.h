@@ -41,8 +41,8 @@
 
 #if defined(_WIN64) || defined(_WIN32)
 #include <float.h>
-#define isnan(_X) (_isnan(_X))
-#define isinf(_X) (!_finite(_X)) 
+#define isnan_host(_X) (_isnan(_X))
+#define isinf_host(_X) (!_finite(_X)) 
 #define uint unsigned int
 double sqrt(int _X);
 double log(int _X);

@@ -3,6 +3,11 @@
 
 Port to windows x64 of Alex Krizhevsky's cuda-convnet. Original project and documentation at http://code.google.com/p/cuda-convnet/
 
+Changes
+--------
+New option --fix-nan=1 . You can use it if you have "get nan or inf" error, wich sometimes popping up on some lower end GPU's.
+This option add unary operation wich replace NaN values with zeros in gradients of convolutinal layers. This is an experimantal option, it's possible that it's not always help.
+
 Requirements:
 --------------
 

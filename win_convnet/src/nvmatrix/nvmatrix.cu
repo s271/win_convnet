@@ -389,6 +389,15 @@ void NVMatrix::biggerThan(NVMatrix& b) {
     biggerThan(b, *this);
 }
 
+void NVMatrix::nan2base() {
+	apply(NVMatrixOps::Nan2Base(), *this);
+}
+
+void NVMatrix::nan2zero() {
+	apply(NVMatrixOps::Nan2Zero(), *this);
+}
+
+
 void NVMatrix::equals(NVMatrix& b, NVMatrix& target) {
     applyBinary(NVMatrixBinaryOps::Equals(), b, target);
 }

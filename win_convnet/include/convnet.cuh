@@ -64,11 +64,11 @@ protected:
     int _numTests;
     double _baseErr;
     
-    virtual Layer* initLayer(string& layerType, PyObject* paramsDict);
+    virtual Layer* initLayer(string& layerType, PyObject* paramsDict, bool fix_nan);
     void initCuda();
     void* run();
 public:
-    ConvNet(PyListObject* layerParams, int minibatchSize, int deviceID);
+    ConvNet(PyListObject* layerParams, int minibatchSize, int deviceID, bool fix_nan);
     
     Queue<Worker*>& getWorkerQueue();
     Queue<WorkResult*>& getResultQueue();

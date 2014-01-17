@@ -54,6 +54,8 @@ Layer::Layer(ConvNet* convNet, PyObject* paramsDict, bool trans) :
     _conserveMem = pyDictGetInt(paramsDict, "conserveMem");
     _outputs = _actsTarget < 0 ? new NVMatrix() : NULL;
     _actsGrad = _actsGradTarget < 0 ? new NVMatrix() : NULL;
+
+	nan2Zero = false;
 }
 
 void Layer::fpropNext(PASS_TYPE passType) {
@@ -493,6 +495,11 @@ void ConvLayer::bpropWeights(NVMatrix& v, int inpIdx, PASS_TYPE passType) {
         _weights[inpIdx].getGrad().addSum(_weightGradTmp, 0, scaleTargets, 1);
         _weights[inpIdx].getGrad().reshape(_filterChannels->at(inpIdx) * _filterPixels->at(inpIdx), _numFilters);
     }
+
+	if(nan2Zero) {
+		_weights[inpIdx].getGrad().nan2zero();//nan fix  
+	}
+
 }
 
 void ConvLayer::bpropActs(NVMatrix& v, int inpIdx, float scaleTargets, PASS_TYPE passType) {

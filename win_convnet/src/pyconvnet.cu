@@ -72,16 +72,19 @@ PyObject* initModel(PyObject *self, PyObject *args) {
     PyListObject* pyLayerParams;
     int pyMinibatchSize;
     int pyDeviceID;
+	int fix_nan;
 
-    if (!PyArg_ParseTuple(args, "O!ii",
+    if (!PyArg_ParseTuple(args, "O!iii",
                           &PyList_Type, &pyLayerParams,
                           &pyMinibatchSize,
-                          &pyDeviceID)) {
+                          &pyDeviceID,
+						  &fix_nan)) {
         return NULL;
     }
     model = new ConvNet(pyLayerParams,
                         pyMinibatchSize,
-                        pyDeviceID);
+                        pyDeviceID,
+						fix_nan);
 
     model->start();
     return Py_BuildValue("i", 0);
