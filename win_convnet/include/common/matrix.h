@@ -46,6 +46,14 @@
 #define uint unsigned int
 double sqrt(int _X);
 double log(int _X);
+#else
+#include <cmath>
+int isnan_host(double x) {
+return std::isnan(x);
+}
+int isinf_host(double x) {
+return std::isinf(x);
+}
 #endif
 
 #ifdef USE_MKL
