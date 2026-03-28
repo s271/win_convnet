@@ -1,4 +1,6 @@
  win_convnet
+
+[![gitcgr](https://gitcgr.com/badge/s271/win_convnet.svg)](https://gitcgr.com/s271/win_convnet)
 =============
 
 Port to windows x64 of Alex Krizhevsky's cuda-convnet. Original project and documentation at http://code.google.com/p/cuda-convnet/
